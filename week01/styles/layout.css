@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding: 2%;
+    --nav-padding: 10px 40px;
+    --padding-2: 0 2%;
+}
+
+header {
+    height: auto;
+    background-color: rgb(55, 91, 91);
+    color: gainsboro;
+}
+
+header p {
+    padding: var(--padding);
+}
+
+header nav {
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkslategray;
+    padding: var(--padding);
+    width: 100%;
+    height: auto;
+    margin: 2% 0 0;
+    list-style-type: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+#main-content {
+    padding: var(--padding);
+    grid-column: 1;
+    background-color: gainsboro;
+}
+
+#aside-content {
+    padding: var(--padding);
+    grid-column: 2;
+    background-color: rgb(196, 195, 195);
+}
+
+footer {
+    height: 15%;
+    background-color: darkslategrey;
+    color: gainsboro;
+    padding: var(--padding);
+}
