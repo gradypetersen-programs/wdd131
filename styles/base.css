@@ -13,7 +13,7 @@
 
 header {
     height: auto;
-    background-color: rgb(55, 91, 91);
+    background-color: var(--light-background);
     color: gainsboro;
 }
 
@@ -47,8 +47,7 @@ header nav a:hover {
     text-decoration: overline;
 }
 
-html,
-body {
+html, main{
     height: 100%;
     background-color: rgb(248, 248, 248);
 }
