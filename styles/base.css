@@ -127,8 +127,10 @@ h1 {
 
 .me-img {
     width: 20vh;
+    height: auto;
     grid-column: 3;
     margin: 10px auto;
+    aspect-ratio: 4 / 3;
 }
 
 .me-p {
@@ -137,9 +139,11 @@ h1 {
 
 .new-york-img{
     width: 20vh;
+    height: auto;
     grid-row: 1;
     grid-column: 1;
     margin: 10px auto;
+    aspect-ratio: 4 / 5;
 }
 
 .new-york-p {
