@@ -126,9 +126,9 @@ h1 {
 }
 
 .me-img {
-    width: 60%;
+    width: 20vh;
     grid-column: 3;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .me-p {
@@ -136,10 +136,10 @@ h1 {
 }
 
 .new-york-img{
-    width: 50%;
+    width: 20vh;
     grid-row: 1;
     grid-column: 1;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .new-york-p {
