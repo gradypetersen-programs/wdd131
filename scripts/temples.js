@@ -3,5 +3,6 @@ const navList = document.querySelector('ul');
 
 navButton.addEventListener('click', () => {
     navList.classList.toggle('show');
+    navButton.classList.toggle('open');
 });
 

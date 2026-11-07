@@ -42,4 +42,8 @@
     figcaption {
         margin: 0 auto;
     }
+
+    #hamburger {
+        display: none;
+    }
 }
