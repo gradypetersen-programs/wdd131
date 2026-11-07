@@ -1,0 +1,45 @@
+@media screen and (min-width: 800px) {
+    main {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    header nav {
+        margin: 0;
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: darkslategray;
+        padding: var(--padding);
+        width: 100%;
+        height: auto;
+        list-style-type: none;
+    }
+
+    #temple-album {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        grid-gap: 15px;
+        min-width: 100%;
+    }
+
+    figure{
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        margin: 0 auto;
+    }
+}
