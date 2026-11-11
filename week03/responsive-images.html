@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive image demonstration">
+    <meta name="author" content="Grady Petersen">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span>Responsive Images</span>
+        <nav>
+            <p id="hamburger"></p>
+            <ul>
+                <li><a href="../index.html">Option 1</a></li>
+                <li><a href="../index.html">Option 2</a></li>
+                <li><a href="../index.html">Option 3</a></li>
+                <li><a href="../index.html">Option 4</a></li>
+                <li><a href="../index.html">Option 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Palmyra New York Temple" width="1500" height="250">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span> Grady Petersen | The United States of America
+        </p>
+        <p id="lastModified">placeholder</p>
+    </footer>
+</body>
+
+</html>

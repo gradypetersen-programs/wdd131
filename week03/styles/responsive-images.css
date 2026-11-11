@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding: 2%;
+    --nav-padding: 10px 40px;
+    --padding-2: 0 2%;
+    --light-background: rgb(55, 91, 91);
+}
+
+header {
+    height: auto;
+    background-color: var(--light-background);
+    color: gainsboro;
+}
+
+header span {
+    display: block;
+    padding: var(--padding);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+header nav {
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkslategray;
+    padding: var(--padding);
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+header nav a:hover {
+    text-decoration: overline;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+html,
+main {
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+}
+
+footer {
+    margin-top: 5px;
+    background-color: darkslategray;
+    padding: var(--padding);
+    text-align: center;
+    color: gainsboro;
+}
+
+#lastModified {
+    color: yellow;
+    padding: 5px;
+}
+
+.hero img {
+    width:100%;
+    height: auto;
+}
