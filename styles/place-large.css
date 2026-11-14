@@ -50,7 +50,7 @@
     
     #weather h2, #data h2 {
         background-color: var(--third-color);
-        color: gainsboro;
+        color: black;
         margin-left: -15px;
         text-align: left;
         padding-left: 10px;
