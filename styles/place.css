@@ -68,7 +68,7 @@ main {
     padding: 5px;
 }
 
-#weather-icon {
+.weather-icon {
     width: 4rem;
     display: block;
     margin: 0 auto;
