@@ -1,0 +1,57 @@
+@media screen and (min-width: 800px) {
+    :root {
+            --padding: 2%;
+            --nav-padding: 10px 40px;
+            --padding-2: 0 2%;
+            --background: #003884;
+            --secondary-color: #ffffff;
+            --secondary-card-color: rgb(255 255 255 / 50%);
+            --third-color: #FF6600;
+            --light-background: rgb(55, 91, 91);
+        }
+
+    main {
+        position: relative;
+    }
+
+    #weather {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        width: auto;
+        height: auto;
+        max-width: 500px;
+        background-color: var(--secondary-card-color);
+    }
+
+    #weather h2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #weather-icon {
+        display: block;
+        box-sizing: content-box;
+        margin: 5px;
+        padding: 8px;
+        border-radius: 42%;
+        background-color: rgb(255 255 255 / 85%);
+    }
+
+    #data {
+        position: absolute;
+        top: 15px;
+        left: 17px;
+        background-color: var(--secondary-card-color);
+        width: auto;
+        max-width: 450px;
+    } 
+    
+    #weather h2, #data h2 {
+        background-color: var(--third-color);
+        color: gainsboro;
+        margin-left: -15px;
+    }
+}

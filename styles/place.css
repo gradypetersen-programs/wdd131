@@ -21,7 +21,7 @@ header {
     border-bottom: 0.8rem solid var(--secondary-color);
 }
 
-header span {
+header h1 {
     display: block;
     padding: var(--padding);
     text-align: center;
@@ -36,7 +36,9 @@ header span {
 }
 
 img {
+    display: block;
     width: 100%;
+    height: auto;
 }
 
 body {
@@ -60,9 +62,16 @@ main {
 .card h2, .card p {
     padding: 2.75px;
 }
-.card span {
+
+.card p span {
     font-weight: 500;
     padding: 5px;
+}
+
+#weather-icon {
+    width: 4rem;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
