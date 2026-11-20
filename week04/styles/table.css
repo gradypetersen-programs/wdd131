@@ -1,0 +1,38 @@
+:root{
+    --thead-color: black;
+    --thead-font-color: white;
+    --zebra-color: rgb(155 155 155 / 0.3);
+}
+
+table {
+    margin: 0 auto;
+    border: thin solid black;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px var(--zebra-color);
+}
+caption {
+    caption-side: bottom;
+    padding: 12px;
+}
+thead {
+    background-color: var(--thead-color);
+    color: var(--thead-font-color);
+}
+
+th, td {
+    padding: 8px 15px;
+    border: thin solid black;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra-color);
+}
+
+thead tr:nth-last-child(1) {
+    background-color: #333;
+}
+
+.blank {
+    background-color: var(--thead-color);
+}
