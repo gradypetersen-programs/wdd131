@@ -90,6 +90,7 @@ figure {
 
 figure img {
     width : 80%;
+    height: auto;
 }
 
 .card-section {

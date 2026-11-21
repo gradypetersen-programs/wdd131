@@ -114,6 +114,8 @@ function makeTempleFigures(filteredTempleList) {
         newImage.loading = "lazy"
         newImage.src = temple.imageUrl;
         newImage.alt = `${temple.templeName} Temple`;
+        newImage.width = 400;
+        newImage.height = 300;
 
         const newCaption = document.createElement("figcaption");
         newCaption.innerHTML = `<h2 class="temple-name">${temple.templeName}</h2> 
