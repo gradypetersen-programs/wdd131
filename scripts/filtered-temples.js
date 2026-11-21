@@ -129,8 +129,6 @@ function makeTempleFigures(filteredTempleList) {
     }
 }
 
-// Filters for old temples(before 1900), new temples(after 2000), 
-// large temples(>90000 sq ft), small temples (<10000 sq ft)
 const header = document.getElementById("header");
 const homeDisplay = document.getElementById("home");
 const oldTemples = document.getElementById("old");
