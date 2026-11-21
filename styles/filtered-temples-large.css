@@ -18,6 +18,10 @@
         height: auto;
         list-style-type: none;
     }
+    
+    h1 {
+        margin-bottom: 1rem;
+    }
 
     #temple-album {
         display: grid;
@@ -47,5 +51,9 @@
 
     #hamburger {
         display: none;
+    }
+
+    footer {
+        margin-top: 1rem;
     }
 }
