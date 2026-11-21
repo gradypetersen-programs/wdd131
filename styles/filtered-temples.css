@@ -85,10 +85,15 @@ h1 {
 
 figure {
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 figure img {
     width : 80%;
+}
+
+.card-section {
+    font-weight: 800;
 }
 
 footer {

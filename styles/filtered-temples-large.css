@@ -9,7 +9,7 @@
         margin: 0;
     }
     
-    header nav ul {
+    header nav ul, header nav ul.show {
         display: flex;
         justify-content: space-around;
         background-color: darkslategray;
@@ -30,6 +30,7 @@
         width: 100%;
         margin: 0 auto;
         height: auto;
+        padding: 0;
     }
 
     img {
@@ -41,6 +42,7 @@
 
     figcaption {
         margin: 0 auto;
+        padding-top: 1rem;
     }
 
     #hamburger {

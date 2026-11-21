@@ -88,22 +88,60 @@ const temples = [
 
 const album = document.getElementById("temple-album");
 
-for (const temple of temples) {
-    const newCard = document.createElement("figure");
-    newCard.classList.add("temple-card");
+makeTempleFigures(temples);
 
-    const newImage = document.createElement("img");
-    newImage.src = temple.imageUrl;
-    newImage.alt = `${temple.templeName} temple`;
-    newImage.loading = "lazy"
+function makeTempleFigures(filteredTempleList) {
+    album.innerHTML = "";
+    for (const temple of filteredTempleList) {
+        const newCard = document.createElement("figure");
+        newCard.classList.add("temple-card");
 
-    const newCaption = document.createElement("figcaption");
-    newCaption.innerHTML = `<p class="temple-name">${temple.templeName}</p> 
+        const newImage = document.createElement("img");
+        newImage.src = temple.imageUrl;
+        newImage.alt = `${temple.templeName} Temple`;
+        newImage.loading = "lazy"
+
+        const newCaption = document.createElement("figcaption");
+        newCaption.innerHTML = `<h2 class="temple-name">${temple.templeName}</h2> 
     <p><span class="card-section">Location:</span> ${temple.location}</p>
     <p><span class="card-section">Dedicated:</span> ${temple.dedicated}</p> 
     <p><span class="card-section">Size:</span> ${temple.area} sq ft</p>`
 
-    newCard.append(newImage);
-    newCard.append(newCaption);
-    album.append(newCard);
+        newCard.appendChild(newImage);
+        newCard.appendChild(newCaption);
+        album.appendChild(newCard);
+    }
 }
+
+// Filters for old temples(before 1900), new temples(after 2000), 
+// large temples(>90000 sq ft), small temples (<10000 sq ft)
+
+const homeDisplay = document.getElementById("home");
+const oldTemples = document.getElementById("old");
+const newTemples = document.getElementById("new");
+const largeTemples = document.getElementById("large");
+const smallTemples = document.getElementById("small");
+
+homeDisplay.addEventListener("click", () => {
+    makeTempleFigures(temples);
+});
+
+oldTemples.addEventListener("click", () => {
+    let olds = temples.filter(temple => parseInt(temple.dedicated.split(",")) < 1900);
+    makeTempleFigures(olds);
+});
+
+newTemples.addEventListener("click", () => {
+    let news = temples.filter(temple => parseInt(temple.dedicated.split(",")) > 2000);
+    makeTempleFigures(news);
+});
+
+largeTemples.addEventListener("click", () => {
+    let large = temples.filter(temple => temple.area > 90000);
+    makeTempleFigures(large);
+});
+
+smallTemples.addEventListener("click", () => {
+    let small = temples.filter(temple => temple.area < 10000);
+    makeTempleFigures(small);
+});
